@@ -4,7 +4,15 @@ class Plant:
         self.height = height
         self.age = age
 
-    def show():
-        name_upper = self.name.capit 
-         
+    def show(self):
+        capname: str = self.name.capitalize()
+        print(f"{capname}: {self.height}cm, {self.age} days old")
 
+
+rose: Plant = Plant("rose", 25, 30)
+sunflower: Plant = Plant("sunflower", 80, 45)
+cactus: Plant = Plant("cactus", 15, 120)
+
+rose.show()
+sunflower.show()
+cactus.show()
